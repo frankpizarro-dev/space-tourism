@@ -1,0 +1,21 @@
+<div class="background-container">
+</div>
+
+<main>
+    <div class="destination-title">
+        <p>01</p>
+        <p class="text-preset-5">PICK YOUR DESTINATION</p>
+    </div>
+    <div class="destination-container">
+        <app-destination-image [currentDestionation]="currentDestination"></app-destination-image>
+        <div>
+            <ul class="destination-list">
+                <li *ngFor="let destination of destinationList" (click)="onSelectDestination(destination)">
+                    <p class="text-preset-8">{{destination}}</p>
+                    <div class="underline" [ngClass]="{ 'show-underline': currentDestination === destination}"></div>
+                </li>
+            </ul>
+            <app-destination-detail [currentDestination]="currentDestination"></app-destination-detail>
+        </div>
+    </div>
+</main>

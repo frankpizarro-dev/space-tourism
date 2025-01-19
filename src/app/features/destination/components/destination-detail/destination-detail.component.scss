@@ -1,0 +1,28 @@
+.destination-detail-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+
+    .line {
+        width: 100%;
+        padding: 0.1rem;
+        background-color: rgba(151, 151, 151, 0.25);
+        margin-block: 4rem;
+    }
+
+    .destination__statistics {
+        display: flex;
+        gap: 2.4rem;
+
+        .destination__avg,
+        .destination__travel {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+
+            p {
+                line-height: normal;
+            }
+        }
+    }
+}

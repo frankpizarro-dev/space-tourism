@@ -1,0 +1,6 @@
+<ng-container [ngSwitch]="currentDestionation">
+    <img *ngSwitchCase="Destination.Moon" src="assets/imgs/image-moon.png">
+    <img *ngSwitchCase="Destination.Mars" src="assets/imgs/image-mars.png">
+    <img *ngSwitchCase="Destination.Europa" src="assets/imgs/image-europa.png">
+    <img *ngSwitchCase="Destination.Titan" src="assets/imgs/image-titan.png">
+</ng-container>
