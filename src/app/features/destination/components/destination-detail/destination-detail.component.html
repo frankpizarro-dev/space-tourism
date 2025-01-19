@@ -1,8 +1,8 @@
 <div class="destination-detail-container">
-    <p class="text-preset-2">{{currentDestination}}</p>
+    <p class="text-preset-2 destination__title">{{currentDestination}}</p>
     <ng-container [ngSwitch]="currentDestination">
         <div *ngSwitchCase="Destination.Moon">
-            <p class="text-information text-preset-9" style="max-width: 44.5rem;">See our planet as you’ve never seen it before. A perfect relaxing
+            <p class="destination__information text-preset-9" style="max-width: 44.5rem;">See our planet as you’ve never seen it before. A perfect relaxing
                 trip away to help regain perspective and come back refreshed. While you’re there, take in some history
                 by visiting the Luna 2 and Apollo 11 landing sites.</p>
             <div class="line">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div *ngSwitchCase="Destination.Mars">
-            <p class="text-information text-preset-9" style="max-width: 44.5rem;">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
+            <p class="destination__information text-preset-9" style="max-width: 44.5rem;">Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest planetary mountain in our solar system. It’s two and a half times the size of Everest!</p>
             <div class="line">
             </div>
             <div class="destination__statistics">
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div *ngSwitchCase="Destination.Europa">
-            <p class="text-information text-preset-9" style="max-width: 44.5rem;">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
+            <p class="destination__information text-preset-9" style="max-width: 44.5rem;">The smallest of the four Galilean moons orbiting Jupiter, Europa is a winter lover’s dream. With an icy surface, it’s perfect for a bit of ice skating, curling, hockey, or simple relaxation in your snug wintery cabin.</p>
             <div class="line">
             </div>
             <div class="destination__statistics">
@@ -49,7 +49,7 @@
             </div>
         </div>
         <div *ngSwitchCase="Destination.Titan">
-            <p class="text-information text-preset-9" style="max-width: 44.5rem;">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
+            <p class="destination__information text-preset-9" style="max-width: 44.5rem;">The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.</p>
             <div class="line">
             </div>
             <div class="destination__statistics">

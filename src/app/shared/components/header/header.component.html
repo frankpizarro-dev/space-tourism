@@ -24,7 +24,7 @@
     </div>
     <ul class="menu-list">
         <li *ngFor="let route of routes">
-            <div [routerLink]="route.route" class="text-modal text-preset-8">
+            <div [routerLink]="route.route" class="text-modal text-preset-8" (click)="onShowModalList(false)">
                 <span style="font-weight: bold;">{{route.number}}</span>
                 <a>{{route.name | uppercase}}</a>
             </div>

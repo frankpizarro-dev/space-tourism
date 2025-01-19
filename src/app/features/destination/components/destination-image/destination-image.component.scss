@@ -3,3 +3,10 @@ img{
     height: auto;
     padding: 12.5rem 2.95rem;
 }
+
+@media(max-width:1140px){
+    img{
+        padding-block: 4.2rem;
+        max-width: 30rem;
+    }
+}

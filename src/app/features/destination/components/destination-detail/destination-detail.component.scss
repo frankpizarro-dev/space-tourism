@@ -26,3 +26,44 @@
         }
     }
 }
+
+@media(max-width: 1140px) {
+
+    .destination-detail-container {
+
+        .destination__title,
+        .destination__information {
+            text-align: center;
+        }
+
+        .destination__title {
+            margin-bottom: 1.6rem;
+        }
+
+        .destination__statistics {
+            justify-content: space-around;
+        }
+
+        .line {
+            margin-block: 2.4rem;
+        }
+
+    }
+
+}
+
+@media(max-width:480px) {
+    .destination__title{
+        font-size: 8rem;
+    }
+
+    .destination__statistics {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.4rem;
+
+        >*{
+            align-items: center;
+        }
+    }
+}
