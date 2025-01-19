@@ -1,1 +1,101 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --blue-900: rgb(11, 13, 23);
+    --blue-300: rgb(208, 214, 249);
+    --white: rgb(255, 255, 255)
+}
+
+@font-face {
+    font-family: 'Bellefair';
+    src: url("assets/fonts/Bellefair-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: url("assets/fonts/Barlow-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Barlow-condensed';
+    src: url("assets/fonts/BarlowCondensed-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+    padding: 0rem;
+    margin: 0rem;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Bellefair";
+}
+
+.text-preset-1 {
+    font-size: 14.4rem;
+    line-height: 171.9%;
+    letter-spacing: 0rem;
+}
+
+.text-preset-2 {
+    font-size: 10rem;
+    line-height: 114.6%;
+    letter-spacing: 0rem;
+}
+
+.text-preset-3 {
+    font-size: 5.6rem;
+    line-height: 64.2%;
+    letter-spacing: 0rem;
+}
+
+.text-preset-4 {
+    font-size: 3.2rem;
+    line-height: 36.7%;
+    letter-spacing: 0rem;
+}
+
+.text-preset-5 {
+    font-family: 'Barlow-condensed';
+    font-size: 2.8rem;
+    line-height: 33.6%;
+    letter-spacing: 0.4rem;
+}
+
+.text-preset-6 {
+    font-size: 2.8rem;
+    line-height: 32.1%;
+    letter-spacing: 0rem;
+}
+
+.text-preset-7 {
+    font-family: 'Barlow-condensed';
+    font-size: 1.4rem;
+    line-height: 16.8%;
+    letter-spacing: 0.2rem;
+}
+
+.text-preset-8 {
+    font-family: 'Barlow-condensed';
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+}
+
+.text-preset-9 {
+    font-family: 'Barlow';
+    font-size: 1.8rem;
+    line-height: 180%;
+    letter-spacing: 0rem;
+}

@@ -1,0 +1,33 @@
+<header>
+
+    <img (click)="goToHome()" src="assets/icons/Logo.svg">
+
+    <div class="line"></div>
+
+    <ul class="menu-navigation">
+        <li *ngFor="let route of routes">
+            <div [routerLink]="route.route" class="text-item text-preset-8">
+                <span>{{route.number}}</span>
+                <a>{{route.name | uppercase}}</a>
+                <div [routerLink]="route.route" routerLinkActive="show-underline" class="underline"></div>
+            </div>
+        </li>
+    </ul>
+
+    <img (click)="onShowModalList(true)" class="menu-icon" src="assets/icons/menu.svg">
+
+</header>
+
+<div class="modal-menu-list" *ngIf="showModalList">
+    <div (click)="onShowModalList(false)">
+        <img src="assets/icons/Close.svg">
+    </div>
+    <ul class="menu-list">
+        <li *ngFor="let route of routes">
+            <div [routerLink]="route.route" class="text-modal text-preset-8">
+                <span style="font-weight: bold;">{{route.number}}</span>
+                <a>{{route.name | uppercase}}</a>
+            </div>
+        </li>
+    </ul>
+</div>

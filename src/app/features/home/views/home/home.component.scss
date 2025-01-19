@@ -1,0 +1,80 @@
+.background-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/assets/imgs/background-home-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+main {
+    margin: 10rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    z-index: 10000;
+
+    .information {
+        max-width: 54rem;
+        display: flex;
+        flex-direction: column;
+        color: white;
+    }
+
+    .explore {
+        width: 272px;
+        height: 272px;
+        border-radius: 50%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+@media(max-width:1015px) {
+    .background-container {
+        background-image: url("/assets/imgs/background-home-tablet.jpg");
+    }
+
+    main {
+        margin: 12.8rem;
+        flex-direction: column;
+        align-items: center;
+        gap: 6.6rem;
+
+        .information {
+            align-items: center;
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width:768px) {}
+
+@media(max-width:480px) {
+    .background-container {
+        background-image: url("/assets/imgs/background-home-mobile.jpg");
+    }
+
+    main {
+
+        .information {
+            p:nth-child(1) {
+                line-height: normal;
+            }
+
+            p:nth-child(2) {
+                font-size: 80px;
+            }
+        }
+
+    }
+}
