@@ -18,7 +18,7 @@ export class DestinationDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.log(this.currentDestination)
+
   }
 
 }

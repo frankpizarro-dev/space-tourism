@@ -1,0 +1,19 @@
+<div class="crew-detail-container">
+    <div class="blank"></div>
+    <div>
+        <div class="crew-detail__title">
+            <p class="text-preset-4">{{currentCrew.rol}}</p>
+            <p class="text-preset-3">{{currentCrew.name}}</p>
+        </div>
+        <p class="crew-detail__information text-preset-9">{{currentCrew.information}}</p>
+    </div>
+    <div class="crew-detail__points">
+        <div 
+            class="crew-detail__point" 
+            *ngFor="let crew of crewDetails; let i = index" 
+            [ngClass]="{ 'crew-detail__point--selected' : (i+1) === pointSelected}"
+            (click)="onChangeCrew(i+1)"
+        >
+        </div>
+    </div>
+</div>

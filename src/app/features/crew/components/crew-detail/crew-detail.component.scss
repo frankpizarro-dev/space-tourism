@@ -1,0 +1,71 @@
+.crew-detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 53.9rem;
+
+    .crew-detail__title {
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem;
+
+        p {
+            color: white;
+            line-height: normal !important;
+        }
+
+        p:nth-child(1) {
+            color: white;
+            opacity: 0.52;
+        }
+    }
+
+    .crew-detail__information {
+        margin-top: 2.4rem;
+        color: var(--blue-300);
+    }
+
+    .crew-detail__points {
+        display: flex;
+        gap: 4rem;
+        margin-top: 4rem;
+        margin-bottom: 4.8rem;
+
+        .crew-detail__point {
+            background-color: #979797;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &.crew-detail__point--selected{
+                background-color: var(--white);
+            }
+        }
+    }
+
+}
+
+@media(max-width:1140px) {
+    .crew-detail-container {
+
+        .crew-detail__title,
+        .crew-detail__information {
+            text-align: center;
+        }
+
+    }
+
+    .crew-detail__points {
+        justify-content: center;
+        margin-top: 8rem;
+        margin-bottom: 3.2rem;
+    }
+}
+
+@media(max-width:480px) {
+    .crew-detail-container{
+        max-width: auto;
+    }
+}

@@ -109,12 +109,20 @@ main {
 }
 
 @media(max-width:768px) {
+    .background-container {
+        background-image: url("/assets/imgs/background-destination-tablet.jpg");
+    }
+
     .destination-title {
         justify-content: center;
     }
 }
 
 @media(max-width:480px) {
+    .background-container {
+        background-image: url("/assets/imgs/background-destination-mobile.jpg");
+    }
+
     main {
         padding: 2.4rem;
         display: flex;

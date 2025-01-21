@@ -1,0 +1,13 @@
+.crew__image {
+    img {
+        max-width: 53.9rem;
+    }
+}
+
+@media(max-width:480px) {
+    .crew__image {
+        img {
+            width: 100%;
+        }
+    }
+}
