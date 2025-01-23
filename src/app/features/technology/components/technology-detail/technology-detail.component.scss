@@ -1,0 +1,89 @@
+@import 'src/breakpoints.scss';
+
+.technology-detail-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 6.4rem;
+
+    .technology-detail__points {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+
+        .technology-detail__point {
+            width: 8rem;
+            height: 8rem;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 0.01rem solid rgba(255, 255, 255, 0.25);
+            cursor: pointer;
+
+            span {
+                color: white;
+            }
+
+            &.active {
+                background-color: white;
+
+                span {
+                    color: var(--blue-900);
+                }
+            }
+
+            @media(max-width:$breakpoint-md) {
+                width: 5.6rem;
+                height: 5.6rem;
+
+                span {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+
+        @media(max-width: $breakpoint-md) {
+            flex-direction: row;
+            gap: 1.6rem;
+        }
+
+    }
+
+    .technology-detail__information {
+
+        display: flex;
+        flex-direction: column;
+        max-width: 49.1rem;
+
+        p {
+            line-height: normal;
+        }
+
+        .technology-detail__title {
+            color: rgba(255, 255, 255, 0.50);
+        }
+
+        .technology-detail__name {
+            color: white;
+        }
+
+        .technology-detail__description {
+            color: var(--blue-300);
+        }
+
+        @media(max-width:$breakpoint-md) {
+            text-align: center;
+        }
+
+    }
+
+    @media(max-width: $breakpoint-md) {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    @media(max-width: $breakpoint-xs) {
+        padding-inline: 2.4rem;
+    }
+}

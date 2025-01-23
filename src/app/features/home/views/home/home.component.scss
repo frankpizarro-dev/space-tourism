@@ -1,3 +1,5 @@
+@import 'src/breakpoints.scss';
+
 .background-container {
     position: fixed;
     width: 100%;
@@ -11,6 +13,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media(max-width:1015px) {
+        background-image: url("/assets/imgs/background-home-tablet.jpg");
+    }
+
+    @media(max-width:$breakpoint-xs) {
+        background-image: url("/assets/imgs/background-home-mobile.jpg");
+    }
 }
 
 main {
@@ -38,14 +48,8 @@ main {
         align-items: center;
         cursor: pointer;
     }
-}
 
-@media(max-width:1015px) {
-    .background-container {
-        background-image: url("/assets/imgs/background-home-tablet.jpg");
-    }
-
-    main {
+    @media(max-width:1015px) {
         margin: 12.8rem;
         flex-direction: column;
         align-items: center;
@@ -56,16 +60,8 @@ main {
             text-align: center;
         }
     }
-}
 
-@media(max-width:768px) {}
-
-@media(max-width:480px) {
-    .background-container {
-        background-image: url("/assets/imgs/background-home-mobile.jpg");
-    }
-
-    main {
+    @media(max-width:$breakpoint-xs) {
         margin: 2.4rem;
 
         .information {
@@ -77,6 +73,6 @@ main {
                 font-size: 8rem;
             }
         }
-
     }
+
 }

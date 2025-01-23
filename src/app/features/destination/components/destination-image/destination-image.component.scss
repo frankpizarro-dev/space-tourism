@@ -1,11 +1,11 @@
-img{
+@import 'src/breakpoints.scss';
+
+img {
     max-width: 48rem;
     height: auto;
     padding: 12.5rem 2.95rem;
-}
 
-@media(max-width:1140px){
-    img{
+    @media(max-width:$breakpoint-md) {
         padding-block: 4.2rem;
         max-width: 30rem;
     }

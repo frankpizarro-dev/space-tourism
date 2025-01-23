@@ -1,0 +1,16 @@
+<div class="technology-detail-container">
+    <div class="technology-detail__points">
+        <div class="technology-detail__point" 
+            *ngFor="let point of technologyService.getTechnologyList; let i = index"
+            (click) = "onChangeTechnology(i+1)"
+            [ngClass]="{ 'active': currentTechnology.order === i+1}"
+        >
+            <span class="text-preset-4">{{i+1}}</span>
+        </div>
+    </div>
+    <div class="technology-detail__information">
+        <p class="technology-detail__title text-preset-4">THE TERMINOLOGY...</p>
+        <p class="technology-detail__name text-preset-3">{{currentTechnology.name}}</p>  
+        <p class="technology-detail__description text-preset-9">{{currentTechnology.description}}</p>  
+    </div>
+</div>

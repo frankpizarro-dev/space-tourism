@@ -1,3 +1,5 @@
+@import "src/breakpoints.scss";
+
 .destination-detail-container {
     display: flex;
     flex-direction: column;
@@ -27,7 +29,7 @@
     }
 }
 
-@media(max-width: 1140px) {
+@media(max-width: $breakpoint-md) {
 
     .destination-detail-container {
 
@@ -52,8 +54,8 @@
 
 }
 
-@media(max-width:480px) {
-    .destination__title{
+@media(max-width:$breakpoint-xs) {
+    .destination__title {
         font-size: 8rem;
     }
 
@@ -62,7 +64,7 @@
         align-items: center;
         gap: 2.4rem;
 
-        >*{
+        >* {
             align-items: center;
         }
     }

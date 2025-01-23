@@ -1,3 +1,5 @@
+@import 'src/breakpoints.scss';
+
 header {
     padding-left: 6.4rem;
     padding-top: 4rem;
@@ -19,6 +21,10 @@ header {
         position: relative;
         z-index: 100;
         left: 6.4rem;
+
+        @media(max-width:780px) {
+            display: none !important;
+        }
     }
 
     .menu-navigation {
@@ -67,11 +73,27 @@ header {
 
         }
 
+        @media(max-width:$breakpoint-sm) {
+            display: none !important;
+        }
+
     }
 
     .menu-icon {
         cursor: pointer;
         display: none;
+
+        @media(max-width:$breakpoint-sm) {
+            display: block !important;
+        }
+    }
+
+    @media(max-width:$breakpoint-sm) {
+        padding-right: 6.4rem;
+    }
+
+    @media(max-width:$breakpoint-xs) {
+        padding: 2.4rem;
     }
 
 }
@@ -84,7 +106,7 @@ header {
     top: 0;
     z-index: 1000000;
     list-style-type: none;
-    background-color: rgba(11,13,23,0.15);
+    background-color: rgba(11, 13, 23, 0.15);
     backdrop-filter: blur(8rem);
     display: flex;
     flex-direction: column;
@@ -109,46 +131,15 @@ header {
         color: white;
         padding-left: 3.2rem;
 
-        .text-modal{
+        .text-modal {
             cursor: pointer;
             display: flex;
             gap: 1.2rem;
 
-            span{
+            span {
                 font-weight: bold;
             }
         }
     }
 
-}
-
-
-@media(max-width:780px) {
-    .line {
-        display: none;
-    }
-}
-
-@media(max-width:768px) {
-
-    header {
-        padding-right: 6.4rem;
-
-        .menu-navigation,
-        .line {
-            display: none !important;
-        }
-
-        .menu-icon {
-            display: block !important;
-        }
-    }
-
-
-}
-
-@media(max-width:480px) {
-    header {
-        padding: 2.4rem;
-    }
 }

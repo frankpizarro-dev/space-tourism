@@ -1,3 +1,5 @@
+@import 'src/breakpoints.scss';
+
 .background-container {
     position: fixed;
     width: 100%;
@@ -11,6 +13,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    @media(max-width:$breakpoint-sm) {
+        background-image: url("/assets/imgs/background-destination-tablet.jpg");
+    }
+
+    @media(max-width:$breakpoint-xs) {
+        background-image: url("/assets/imgs/background-destination-mobile.jpg");
+    }
 }
 
 main {
@@ -28,6 +38,26 @@ main {
             font-size: 2.8rem;
             font-weight: bold;
             color: rgba(255, 255, 255, 0.25);
+        }
+
+        @media(max-width:$breakpoint-md) {
+            margin-bottom: 2.4rem;
+        }
+
+        @media(max-width:780px) {
+            justify-content: center;
+
+            p {
+                line-height: normal;
+            }
+
+        }
+
+        @media(max-width:$breakpoint-xs) {
+            .text-preset-5 {
+                font-size: 2.2rem;
+            }
+
         }
     }
 
@@ -68,85 +98,44 @@ main {
                 }
             }
 
-
-        }
-
-    }
-
-
-}
-
-
-@media(max-width:1140px) {
-    .destination-title {
-        margin-bottom: 2.4rem;
-    }
-
-    .destination-container {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 3.2rem;
-
-        >div {
-            padding: 1.5rem 8.7rem !important;
-        }
-
-        .destination-list {
-            justify-content: center;
-        }
-    }
-}
-
-@media(max-width:780px) {
-    .destination-title {
-        justify-content: center;
-
-        p {
-            line-height: normal;
-        }
-    }
-}
-
-@media(max-width:768px) {
-    .background-container {
-        background-image: url("/assets/imgs/background-destination-tablet.jpg");
-    }
-
-    .destination-title {
-        justify-content: center;
-    }
-}
-
-@media(max-width:480px) {
-    .background-container {
-        background-image: url("/assets/imgs/background-destination-mobile.jpg");
-    }
-
-    main {
-        padding: 2.4rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        .destination-title {
-            .text-preset-5 {
-                font-size: 2.2rem;
+            @media(max-width:$breakpoint-md) {
+                justify-content: center;
             }
+
+            @media(max-width:$breakpoint-xs) {
+                margin-bottom: 2.4rem !important;
+            }
+
         }
 
-        .destination-container {
+        @media(max-width:$breakpoint-md) {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 3.2rem;
+
+            >div {
+                padding: 1.5rem 8.7rem !important;
+            }
+
+        }
+
+        @media(max-width:$breakpoint-xs) {
             padding: 0 !important;
 
             >div {
                 padding: 0 !important;
             }
 
-            .destination-list {
-                margin-bottom: 2.4rem !important;
-            }
         }
 
-
     }
+
+    @media(max-width:$breakpoint-xs) {
+        padding: 2.4rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

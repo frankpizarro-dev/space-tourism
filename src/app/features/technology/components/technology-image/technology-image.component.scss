@@ -1,0 +1,13 @@
+@import 'src/breakpoints.scss';
+
+.technology-image {
+    img {
+        max-width: 60.8rem;
+    }
+
+    @media(max-width: $breakpoint-md) {
+        img {
+            max-width: 100%;
+        }
+    }
+}

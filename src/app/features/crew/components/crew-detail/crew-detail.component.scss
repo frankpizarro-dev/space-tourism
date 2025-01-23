@@ -1,3 +1,5 @@
+@import 'src/breakpoints.scss';
+
 .crew-detail-container {
     display: flex;
     flex-direction: column;
@@ -39,7 +41,7 @@
             border-radius: 50%;
             cursor: pointer;
 
-            &.crew-detail__point--selected{
+            &.crew-detail__point--selected {
                 background-color: var(--white);
             }
         }
@@ -47,7 +49,7 @@
 
 }
 
-@media(max-width:1140px) {
+@media(max-width:$breakpoint-md) {
     .crew-detail-container {
 
         .crew-detail__title,
@@ -64,8 +66,8 @@
     }
 }
 
-@media(max-width:480px) {
-    .crew-detail-container{
+@media(max-width:$breakpoint-xs) {
+    .crew-detail-container {
         max-width: auto;
     }
 }

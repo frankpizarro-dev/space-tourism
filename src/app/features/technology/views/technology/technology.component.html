@@ -1,0 +1,19 @@
+<div class="background-container">
+</div>
+
+<main>
+    <div class="crew-title">
+        <p>03</p>
+        <p class="text-preset-5">SPACE LAUNCH 101</p>
+    </div>
+    <div class="crew-container">
+        <app-technology-detail 
+            (technologyEmitter)="onChangeTechnology($event)" 
+            [currentTechnology]="currentTechnology"
+        >
+        </app-technology-detail>
+        <app-technology-image 
+            [imageSelected]="imageSelected">
+        </app-technology-image>
+    </div>
+</main>
