@@ -58,21 +58,21 @@ main {
         .information {
             align-items: center;
             text-align: center;
+
+            @media(max-width:$breakpoint-xs) {
+                p:nth-child(1) {
+                    line-height: normal;
+                }
+
+                p:nth-child(2) {
+                    font-size: 8rem;
+                }
+            }
         }
     }
 
     @media(max-width:$breakpoint-xs) {
         margin: 2.4rem;
-
-        .information {
-            p:nth-child(1) {
-                line-height: normal;
-            }
-
-            p:nth-child(2) {
-                font-size: 8rem;
-            }
-        }
     }
 
 }
