@@ -21,11 +21,19 @@
             color: white;
             opacity: 0.52;
         }
+
+        @media(max-width:$breakpoint-md) {
+            text-align: center;
+        }
     }
 
     .crew-detail__information {
         margin-top: 2.4rem;
         color: var(--blue-300);
+
+        @media(max-width:$breakpoint-md) {
+            text-align: center;
+        }
     }
 
     .crew-detail__points {
@@ -45,29 +53,16 @@
                 background-color: var(--white);
             }
         }
-    }
 
-}
-
-@media(max-width:$breakpoint-md) {
-    .crew-detail-container {
-
-        .crew-detail__title,
-        .crew-detail__information {
-            text-align: center;
+        @media(max-width:$breakpoint-md) {
+            justify-content: center;
+            margin-top: 8rem;
+            margin-bottom: 3.2rem;
         }
-
     }
 
-    .crew-detail__points {
-        justify-content: center;
-        margin-top: 8rem;
-        margin-bottom: 3.2rem;
-    }
-}
-
-@media(max-width:$breakpoint-xs) {
-    .crew-detail-container {
+    @media(max-width:$breakpoint-xs) {
         max-width: auto;
     }
+
 }

@@ -40,10 +40,24 @@
 
         .destination__title {
             margin-bottom: 1.6rem;
+
+            @media(max-width:$breakpoint-xs) {
+                font-size: 8rem;
+            }
         }
 
         .destination__statistics {
             justify-content: space-around;
+
+            @media(max-width:$breakpoint-xs) {
+                flex-direction: column;
+                align-items: center;
+                gap: 2.4rem;
+
+                >* {
+                    align-items: center;
+                }
+            }
         }
 
         .line {
@@ -52,20 +66,4 @@
 
     }
 
-}
-
-@media(max-width:$breakpoint-xs) {
-    .destination__title {
-        font-size: 8rem;
-    }
-
-    .destination__statistics {
-        flex-direction: column;
-        align-items: center;
-        gap: 2.4rem;
-
-        >* {
-            align-items: center;
-        }
-    }
 }

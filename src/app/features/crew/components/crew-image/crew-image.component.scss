@@ -3,12 +3,8 @@
 .crew__image {
     img {
         max-width: 53.9rem;
-    }
-}
 
-@media(max-width:$breakpoint-xs) {
-    .crew__image {
-        img {
+        @media(max-width:$breakpoint-xs) {
             width: 100%;
         }
     }
